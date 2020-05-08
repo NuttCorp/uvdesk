@@ -30,7 +30,7 @@ RUN apt-get update && \
 	cp ./entrypoint.sh /usr/local/bin/ && \
 	chown -R uvdesk:uvdesk /var/www && \
 	service apache2 restart && \
-	php bin/console c:c;
+	php bin/console c:c; \
     # Clean up files
     rm -rf \
         /var/lib/apt/lists/* \
