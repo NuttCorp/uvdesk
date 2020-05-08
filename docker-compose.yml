@@ -8,6 +8,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - MYSQL_ROOT_PASSWORD=ROOTPASSWORD
+      - MYSQL_DATABASE=uvdesk_db
+      - MYSQL_USER=uvdesk_user
+      - MYSQL_PASSWORD=USERPASSWORD
     ports:
       - "85:80"
     restart: always
