@@ -44,5 +44,4 @@ RUN apt-get update && \
 WORKDIR /var/www
 
 ENTRYPOINT ["entrypoint.sh"]
-# CMD ["/bin/bash"]
-CMD ["-D", "FOREGROUND"]
+CMD ["/bin/bash"]
