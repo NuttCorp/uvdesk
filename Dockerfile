@@ -28,6 +28,7 @@ RUN apt-get update && \
 	cp ./.docker/config/apache2/httpd.conf /etc/apache2/apache2.conf && \
 	cp ./.docker/config/apache2/vhost.conf /etc/apache2/sites-available/000-default.conf && \
 	cp ./entrypoint.sh /usr/local/bin/ && \
+	chmod +x /usr/local/bin/entrypoint.sh && \
 	chown -R uvdesk:uvdesk /var/www && \
 	service apache2 restart && \
 	php bin/console c:c; \
