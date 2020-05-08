@@ -1,7 +1,6 @@
 FROM ubuntu:latest
 LABEL maintainer="nuttcorp@gmail.com"
 
-# Install base supplimentary packages
 RUN apt-get update && \
 	DEBIAN_FRONTEND=noninteractive apt-get install -y software-properties-common && \
 	add-apt-repository -y ppa:ondrej/php && \
@@ -44,5 +43,6 @@ RUN apt-get update && \
 # Change working directory to uvdesk source
 WORKDIR /var/www
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/usr/sbin/apache2ctl"] 
+# ENTRYPOINT ["entrypoint.sh"]
 CMD ["/bin/bash"]
