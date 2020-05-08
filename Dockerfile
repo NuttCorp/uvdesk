@@ -23,7 +23,7 @@ RUN apt-get update && \
 	chmod 777 -R /var/www/uvdesk/config && \
 	chmod 777 -R /var/www/uvdesk/var && \
 	cd /var/www/uvdesk && \
-	wget https://github.com/NuttCorp/uvdesk/blob/master/entrypoint.sh
+	wget https://github.com/NuttCorp/uvdesk/blob/master/entrypoint.sh && \
 	cp ./.docker/config/apache2/env /etc/apache2/envvars && \
 	cp ./.docker/config/apache2/httpd.conf /etc/apache2/apache2.conf && \
 	cp ./.docker/config/apache2/vhost.conf /etc/apache2/sites-available/000-default.conf && \
