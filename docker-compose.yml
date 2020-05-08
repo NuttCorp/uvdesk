@@ -4,6 +4,7 @@ services:
   app:
     depends_on:
       - db
+    tty: true
     build:
       context: .
       dockerfile: Dockerfile
