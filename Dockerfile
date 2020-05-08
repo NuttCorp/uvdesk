@@ -43,6 +43,6 @@ RUN apt-get update && \
 # Change working directory to uvdesk source
 WORKDIR /var/www
 
-ENTRYPOINT ["/usr/sbin/apache2ctl"] 
-# ENTRYPOINT ["entrypoint.sh"]
-CMD ["/bin/bash"]
+ENTRYPOINT ["entrypoint.sh"]
+# CMD ["/bin/bash"]
+CMD ["-D", "FOREGROUND"]
