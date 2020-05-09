@@ -2,7 +2,7 @@
 
 ## Example run:
 ```sh
-docker run -dit -p 85:80 --name uvdesk nuttcorp/uvdesk:latest
+docker run -dit -v uvdesk_data:/var/www:rw -p 85:80 --name UVDesk nuttcorp/uvdesk:latest
 ```
 
 ## Example docker compose:
