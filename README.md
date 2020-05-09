@@ -1,4 +1,5 @@
 # UVDesk with php 7.3 and uses external mySQL DB. 
+Change the APP_ENV key in /var/www/uvdesk/.env from dev to prod when done testing to remove symfony profiler bar.
 
 ## Example run:
 ```sh
