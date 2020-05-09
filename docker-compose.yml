@@ -13,6 +13,7 @@ services:
       - MYSQL_DATABASE=uvdesk_db
       - MYSQL_USER=uvdesk_user
       - MYSQL_PASSWORD=USERPASSWORD
+      - MYSQL_HOST=db
     ports:
       - "85:80"
     restart: always
