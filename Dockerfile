@@ -1,5 +1,6 @@
 FROM ubuntu:latest
 LABEL maintainer="bravoheavy@gmail.com"
+Add ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
 	DEBIAN_FRONTEND=noninteractive apt-get install -y software-properties-common && \
