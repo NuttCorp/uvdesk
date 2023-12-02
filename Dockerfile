@@ -3,7 +3,7 @@ LABEL maintainer="bravoheavy@gmail.com"
 Add ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
-	DEBIAN_FRONTEND=noninteractive apt-get install -y software-properties-common && \
+	apt-get install -y software-properties-common && \
 	add-apt-repository -y ppa:ondrej/php && \
 	apt-get update && \
 	adduser uvdesk -q --disabled-password --gecos "" && \
